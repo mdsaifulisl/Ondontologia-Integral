@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+:root{
+    --main-color:#44C6E9;
+    --secondary-color:#FFF9FD;
+    --Black-Color:#000000;
+    --black-to-color:#D4E4F4;
+    --heading-color:#00296D;
+    --heading-to:#2977D5;
+    --white-color:#ffffff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.heading{
+    font-size: 65px;
+    font-weight: 600;
+    color: var(--heading-color);
+    
+}
+.heading-to{
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+.heading-three{
+    font-size: 28px;
+    color: var(--heading-color);
+}
+
+section{
+    padding: 1.5rem 7%;
+}
+p {
+    font-size: 20px;
+    color: #252525;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #252525;
+    font-size: 20px;
+}
+ul,
+li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    font-size: 20px;
+}
+
+/* heading */
+header{
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--white-color);
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .logo a img{
+    width: 60%;
+    
+}
+.header .nav .navenone{
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+.header .nav ul{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    
+}
+.header .nav ul li a{
+    padding: .5rem 1rem;
+    font-size: 16px;
+    position: relative;
+    transition: .5s;
+}
+.header .nav ul li a:hover{
+    color: var(--heading-to);
+}
+.header .nav ul li a:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--heading-color);
+    transition: .5s;
+    border-radius: 10px;
+}
+.header .nav ul li a:hover:after{
+    width: 100%;
+}
+.header .turno{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.header .turno a{
+    padding: .5rem 1.5rem;
+    border: 1px solid var(--heading-color);
+    border-radius: 25px;
+    transition: .5s;
+    font-size: 16px;
+}
+.header .turno a:hover{
+    background-color: var(--heading-to);
+    color: var(--secondary-color);
+}
+.header .turno i{
+    font-size: 25px;
+    display: none;
+}
+
+/* heading end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1320px){
+   
+}
+@media (max-width:1140px){
+    
+}
+@media (max-width:991px){
+    .heading{
+        font-size: 45px;
+    } 
+    p {
+        font-size: 16px;
+    }
+    li{
+        font-size: 16px;
+    }
+    /* header */
+    .header nav{
+        position: absolute;
+        left: -999999px;
+        top: -1rem;
+        height: 100vh;
+        background-color: var(--main-color);
+        width: 200px;
+        padding-left: 1rem;
+        padding-top: 6rem;
+        transition: .5s;
+        border-radius: 5px;
+    }
+    .header nav.active{
+        left: -1rem;
+    }
+    .header nav ul{
+        flex-direction: column;
+        align-items: flex-end!important;
+        gap: 5rem;
+        width: 100%;
+        padding-right: 2rem;
+        
+    }
+
+    .header .nav .navenone{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        display: inline-block;
+    }
+
+    .header .turno a{
+        display: none;
+    }
+    .header .turno i{
+        display: inline-block;
+        cursor: pointer;
+    }
+    /* header end */
+}
+@media (max-width:720px){
+    
+}
+@media (max-width:540px){
+    .heading{
+        font-size: 32px;
+    }
+
+    .heading-to{
+        font-size: 20px;
+    }
+    .heading-three{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 13px;
+    }
+    a{
+        font-size: 13px;
+    }
+    li{
+        font-size: 13px;
+    }
+
+}
